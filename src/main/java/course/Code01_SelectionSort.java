@@ -13,8 +13,8 @@ import java.util.Arrays;
  */
 public class Code01_SelectionSort {
 
-    public static void selectionSort(int[] arr) {
-        //先判断临时条件
+    private static void selectionSort(int[] arr) {
+        //先判断临界条件
         if (arr == null || arr.length < 2) {
             return;
         }
@@ -33,7 +33,7 @@ public class Code01_SelectionSort {
         }
     }
 
-    public static void swap(int[] arr, int i, int minIndex) {
+    private static void swap(int[] arr, int i, int minIndex) {
         if (i != minIndex) {
             int temp = arr[i];
             arr[i] = arr[minIndex];
